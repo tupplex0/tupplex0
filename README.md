@@ -4,7 +4,9 @@
 
 <br/>
 
-<img src="https://readme-typing-svg.demolab.com/api?font=Fira+Code&weight=500&size=20&duration=3000&pause=900&color=F97316&center=true&vCenter=true&width=780&lines=Senior+Engineers.+Zero+Handoffs.+Production-Ready.;We+design%2C+build+%26+scale+software+that+holds+up.;10x+Faster+with+AI.+98%25+On-Time+Delivery.;Partners+who+ship+not+just+consultants+who+talk." alt="Typing SVG" height="40"/>
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&center=true&width=1000&lines=Software+Development+%7C+DevOps+Engineering+%7C+Cloud+Consulting;Building+Modern+Tech+for+Modern+Business" alt="Typing SVG" />
+</p>
 
 <br/><br/>
 
