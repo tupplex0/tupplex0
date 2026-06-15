@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300">
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="55%" r="45%">
+      <stop offset="0%"   stop-color="#f97316" stop-opacity="0.24"/>
+      <stop offset="62%"  stop-color="#f97316" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#0c0a08"  stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="bar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#0c0a08"/>
+      <stop offset="22%"  stop-color="#f97316"/>
+      <stop offset="50%"  stop-color="#ea580c"/>
+      <stop offset="78%"  stop-color="#f97316"/>
+      <stop offset="100%" stop-color="#0c0a08"/>
+    </linearGradient>
+    <linearGradient id="lL" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#f97316" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#f97316" stop-opacity="0.6"/>
+    </linearGradient>
+    <linearGradient id="lR" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#f97316" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#f97316" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="grid" width="55" height="55" patternUnits="userSpaceOnUse">
+      <path d="M55 0L0 0 0 55" fill="none" stroke="#ffffff" stroke-width="0.3" opacity="0.045"/>
+    </pattern>
+    <style>
+      @keyframes gp  { 0%,100%{opacity:.6;transform:scale(1)} 50%{opacity:1;transform:scale(1.04)} }
+      @keyframes dbL { 0%,100%{opacity:.7} 50%{opacity:.15} }
+      @keyframes dbR { 0%,100%{opacity:.7} 50%{opacity:.15} }
+      @keyframes fu  { from{opacity:0;transform:translateY(18px)} to{opacity:1;transform:translateY(0)} }
+      @keyframes rise {
+        0%   {opacity:0;transform:translateY(0)}
+        15%  {opacity:.78}
+        85%  {opacity:.25}
+        100% {opacity:0;transform:translateY(-258px)}
+      }
+      .G  { animation: gp  3.6s ease-in-out infinite }
+      .DL { animation: dbL 2.1s ease-in-out infinite }
+      .DR { animation: dbR 2.1s .95s ease-in-out infinite }
+      .T  { animation: fu  1s   cubic-bezier(.16,1,.3,1) both }
+      .S  { animation: fu  1s   .23s cubic-bezier(.16,1,.3,1) both }
+      .Q  { animation: fu  1s   .46s cubic-bezier(.16,1,.3,1) both }
+      /* 10 delay classes spread across ~4-5 second cycles */
+      .d0 { animation: rise 4.3s 0.00s ease-in infinite }
+      .d1 { animation: rise 4.3s 0.43s ease-in infinite }
+      .d2 { animation: rise 4.3s 0.86s ease-in infinite }
+      .d3 { animation: rise 4.3s 1.29s ease-in infinite }
+      .d4 { animation: rise 4.3s 1.72s ease-in infinite }
+      .d5 { animation: rise 5.1s 0.21s ease-in infinite }
+      .d6 { animation: rise 5.1s 0.64s ease-in infinite }
+      .d7 { animation: rise 5.1s 1.07s ease-in infinite }
+      .d8 { animation: rise 5.1s 1.50s ease-in infinite }
+      .d9 { animation: rise 5.1s 1.93s ease-in infinite }
+      .cc { font-family:'Courier New',monospace; font-size:13px; fill:#f97316; opacity:.058 }
+    </style>
+  </defs>
+
+  <!-- ── Background ──────────────────────────────────────────────────────── -->
+  <rect width="1200" height="300" fill="#0c0a08"/>
+  <rect width="1200" height="300" fill="url(#grid)"/>
+
+  <!-- ── Decorative code chars ───────────────────────────────────────────── -->
+  <text class="cc" x="44"   y="80">{  }</text>
+  <text class="cc" x="80"   y="238">&lt;/&gt;</text>
+  <text class="cc" x="1066" y="88">[  ]</text>
+  <text class="cc" x="1090" y="228">{  }</text>
+  <text class="cc" x="18"   y="160">( )</text>
+  <text class="cc" x="1148" y="162">=&gt;</text>
+  <text class="cc" x="148"  y="52">const</text>
+  <text class="cc" x="992"  y="260">async</text>
+  <text class="cc" x="164"  y="274">return</text>
+  <text class="cc" x="958"  y="48">await</text>
+  <text class="cc" x="50"   y="204">fn()</text>
+  <text class="cc" x="1106" y="112">===</text>
+
+  <!-- ── Central glow ────────────────────────────────────────────────────── -->
+  <ellipse class="G" cx="600" cy="155" rx="292" ry="154" fill="url(#glow)"/>
+
+  <!-- ── Horizontal accent lines ────────────────────────────────────────── -->
+  <line x1="80"   y1="150" x2="395"  y2="150" stroke="url(#lL)" stroke-width="1"/>
+  <line x1="805"  y1="150" x2="1120" y2="150" stroke="url(#lR)" stroke-width="1"/>
+  <circle class="DL" cx="393" cy="150" r="4.5" fill="#f97316"/>
+  <circle class="DR" cx="807" cy="150" r="4.5" fill="#f97316"/>
+
+  <!-- ── Particles ───────────────────────────────────────────────────────── -->
+  <circle class="d0" cx="96"   cy="291" r="2"   fill="#f97316"/>
+  <circle class="d1" cx="145"  cy="293" r="1.5" fill="#fb923c"/>
+  <circle class="d2" cx="194"  cy="290" r="2.5" fill="#ea580c"/>
+  <circle class="d3" cx="243"  cy="292" r="1"   fill="#fdba74"/>
+  <circle class="d4" cx="292"  cy="291" r="2"   fill="#f97316"/>
+  <circle class="d5" cx="341"  cy="294" r="1.5" fill="#fb923c"/>
+  <circle class="d6" cx="390"  cy="290" r="2"   fill="#f97316"/>
+  <circle class="d7" cx="439"  cy="292" r="1"   fill="#ea580c"/>
+  <circle class="d8" cx="488"  cy="291" r="2.5" fill="#f97316"/>
+  <circle class="d9" cx="537"  cy="293" r="1.5" fill="#fdba74"/>
+  <circle class="d0" cx="586"  cy="290" r="2"   fill="#f97316"/>
+  <circle class="d1" cx="614"  cy="292" r="1"   fill="#fb923c"/>
+  <circle class="d2" cx="663"  cy="291" r="2.5" fill="#ea580c"/>
+  <circle class="d3" cx="712"  cy="293" r="1.5" fill="#f97316"/>
+  <circle class="d4" cx="761"  cy="290" r="2"   fill="#fdba74"/>
+  <circle class="d5" cx="810"  cy="292" r="1"   fill="#f97316"/>
+  <circle class="d6" cx="859"  cy="291" r="2.5" fill="#fb923c"/>
+  <circle class="d7" cx="908"  cy="293" r="1.5" fill="#f97316"/>
+  <circle class="d8" cx="957"  cy="290" r="2"   fill="#ea580c"/>
+  <circle class="d9" cx="1006" cy="292" r="1"   fill="#f97316"/>
+  <circle class="d0" cx="1055" cy="291" r="2.5" fill="#fdba74"/>
+  <circle class="d1" cx="1104" cy="293" r="1.5" fill="#f97316"/>
+
+  <!-- ── Main logotype ───────────────────────────────────────────────────── -->
+  <text class="T"
+    x="600" y="165"
+    text-anchor="middle"
+    font-family="'Helvetica Neue',Helvetica,Arial,sans-serif"
+    font-size="84"
+    font-weight="800"
+    letter-spacing="-3"
+    fill="#f5f0ea">tupple<tspan fill="#f97316">X</tspan></text>
+
+  <!-- ── "TECHNOLOGIES" label ────────────────────────────────────────────── -->
+  <text class="S"
+    x="600" y="200"
+    text-anchor="middle"
+    font-family="'Helvetica Neue',Helvetica,Arial,sans-serif"
+    font-size="11"
+    font-weight="600"
+    letter-spacing="8"
+    fill="#f97316">TECHNOLOGIES</text>
+
+  <!-- ── Italic tagline ──────────────────────────────────────────────────── -->
+  <text class="Q"
+    x="600" y="234"
+    text-anchor="middle"
+    font-family="Georgia,'Times New Roman',serif"
+    font-size="13.5"
+    font-style="italic"
+    font-weight="300"
+    letter-spacing="0.5"
+    fill="#8a7d6a">With great software, comes great responsibility.</text>
+
+  <!-- ── Orange bottom bar ───────────────────────────────────────────────── -->
+  <rect x="0" y="296" width="1200" height="4" fill="url(#bar)"/>
+</svg>
