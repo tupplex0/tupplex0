@@ -5,7 +5,7 @@
 <br/>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&center=true&width=1000&lines=Software+Development+%7C+DevOps+Engineering+%7C+Cloud+Consulting;Building+Modern+Tech+for+Modern+Business" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=F97316&center=true&width=1000&lines=Software+Development+%7C+DevOps+Engineering+%7C+Cloud+Consulting;Building+Modern+Tech+for+Modern+Business" alt="Typing SVG" />
 </p>
 
 <br/><br/>
