@@ -4,7 +4,7 @@
 
 <br/>
 
-<img src="https://readme-typing-svg.demolab.com/api?font=Sora&weight=500&size=20&duration=3000&pause=900&color=F97316&center=true&vCenter=true&width=780&lines=Senior+Engineers.+Zero+Handoffs.+Production-Ready.;We+design%2C+build+and+scale+software+that+holds+up.;10x+Faster+with+AI.+98%25+On-Time+Delivery.;Partners+who+ship+—+not+just+consultants+who+talk." alt="Typing SVG" height="40"/>
+<img src="https://readme-typing-svg.demolab.com/api?font=Fira+Code&weight=500&size=20&duration=3000&pause=900&color=F97316&center=true&vCenter=true&width=780&lines=Senior+Engineers.+Zero+Handoffs.+Production-Ready.;We+design%2C+build+%26+scale+software+that+holds+up.;10x+Faster+with+AI.+98%25+On-Time+Delivery.;Partners+who+ship+not+just+consultants+who+talk." alt="Typing SVG" height="40"/>
 
 <br/><br/>
 
